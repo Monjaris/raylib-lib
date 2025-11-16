@@ -1,0 +1,39 @@
+{
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "terminal.integrated.cursorWidth": 40,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.fontLigatures": true,
+
+    "terminal.integrated.scrollback": 100000,
+
+    "workbench.colorCustomizations": {
+        "terminal.background": "#1a0019", // background color
+        "terminal.foreground": "#ffff00", // default text color
+        "terminalCursor.foreground": "#d06222", // cursor color
+        "terminal.ansiBlack": "#1A1B26",
+        "terminal.ansiRed": "#F7768E",
+        "terminal.ansiGreen": "#9ECE6A",
+        "terminal.ansiYellow": "#E0AF68",
+        "terminal.ansiBlue": "#7AA2F7",
+        "terminal.ansiMagenta": "#AD8EE6",
+        "terminal.ansiCyan": "#449DAB",
+        "terminal.ansiWhite": "#C0CAF5"
+    },
+    // Terminal font family
+    "terminal.integrated.fontFamily": "Cascadia Mono",
+    // Terminal font size
+    "terminal.integrated.fontSize": 15,
+    // Terminal font weight (normal, bold, number like 200–900)
+    "terminal.integrated.fontWeight": "bold",
+    "terminal.integrated.fontWeightBold": "900",
+    "terminal.integrated.lineHeight": 1.25,
+    "terminal.integrated.letterSpacing": 2.4,
+    "files.associations": {
+        "*.myconfig": "json",
+        "cmath": "cpp",
+        "complex": "cpp"
+    },
+
+    
+}
