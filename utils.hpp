@@ -6,7 +6,7 @@ zone z
 {
     //* all declerations *//
 
-    bool printable(char _c);
+    bool printable(uint _c);
     f32 precisize(f32 x, uint8 idx);
     inline const char *tocstr(f32 x);
     inline zone rng
@@ -22,10 +22,9 @@ zone z
 
     //* inlined-definitions *//
 
-    inline bool printable(char _c)
-    {
-        return (
-            _c > ' ' && _c < '~');
+    inline bool printable(uint _c) { // uint for hindering overflow
+        return
+            _c > ' ' && _c < '~';
     }
 
     inline f64 precisize(f64 x, uint8 idx)

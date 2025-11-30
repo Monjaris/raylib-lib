@@ -17,6 +17,7 @@ void SETUP();
 void UPDATE();
 void CLEAN();
 
+
 #define drawer(bgColor)  do { \
     BeginDrawing(); \
     ClearBackground(bgColor); \
@@ -35,6 +36,18 @@ void CLEAN();
 #define Do_Once(_stmt, _captures)  static auto block = []{ \
     _stmt;\
 }();
+
+
+inline zone _project_font_paths
+{
+#ifdef __linux__
+    inline constexpr const char* font_path_ui = "/usr/share/fonts/Adwaita/AdwaitaSans-Regular.ttf";
+    inline constexpr const char* font_path_buf = "/usr/share/fonts/TTF/JetBrainsMono-Regular.ttf";
+    inline constexpr const char* font_path_math = "/usr/share/fonts/noto/NotoSansMath-Regular.ttf";
+#elif
+    //
+#endif
+}
 
 
 // C/C++ types
@@ -57,6 +70,10 @@ using f80 = long double;
 using f128 = __float128;
 //
 using uchar = unsigned char;
+using char16 = char16_t;
+using char32 = char32_t;
+using uchar16 = uint16;
+using uchar32 = uint32;
 using byte = uint8;
 using ternary = enum {no, yes=!no, neutral=!no&&!yes};
 //
